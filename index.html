@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="StretCat — lembretes inteligentes de alongamento que cabem na sua rotina de trabalho."
+    />
+    <title>StretCat — Pause seu ritmo</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./public/assets/icon.png" />
+    <script type="module" src="./main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegação principal">
+        <a class="brand" href="#hero" aria-label="Início do StretCat">
+          <img class="brand__logo" src="./public/assets/logo.png" alt="StretCat" />
+        </a>
+
+        <div class="nav__links" aria-label="Seções">
+          <a href="#recursos" id="nav-link-features">Recursos</a>
+          <a href="#planos" id="nav-link-plans">Planos</a>
+          <a href="#download" id="nav-link-download">Download</a>
+        </div>
+
+        <div class="nav__cta">
+          <button class="btn" type="button" id="lang-toggle" aria-label="Trocar idioma">EN</button>
+          <a class="btn btn--primary" href="#" data-download-link id="nav-cta">Baixar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+
+      <section id="hero" class="section section--hero">
+        <div class="container hero">
+          <div>
+            <span class="kicker"><span class="kicker__dot" aria-hidden="true"></span> <span id="hero-kicker">Para quem trabalha sentado demais</span></span>
+            <h1 class="hero__title">
+              <span id="hero-tagline">Pause seu ritmo.</span>
+              <strong id="hero-subtitle">Alongue melhor.</strong>
+            </h1>
+            <p class="hero__desc" id="hero-description">
+              O StretCat te manda lembretes inteligentes de alongamento ao longo do seu dia — para você se manter saudável, focado e em movimento sem perder o ritmo.
+            </p>
+
+            <div class="hero__actions" id="download">
+              <a class="btn btn--primary" href="#" data-download-link id="hero-cta-download" aria-label="Baixar na App Store (placeholder)">
+                Baixar na App Store
+              </a>
+              <a class="btn" data-contact-link href="mailto:businesstrioada@gmail.com" id="hero-cta-talk">Falar com a equipe</a>
+            </div>
+          </div>
+
+          <div class="hero__media" aria-label="Prévia do produto">
+            <img id="hero-image" class="hero__image" src="./public/assets/hero.png" alt="Mascote do StretCat" />
+          </div>
+        </div>
+      </section>
+
+      <section id="recursos" class="section">
+        <div class="container">
+          <h2 class="section__title" id="features-title">Feito para quem esquece de se mexer</h2>
+          <p class="section__lead" id="features-lead">
+            Lembretes gentis, personalização e progresso — para você construir consistência de verdade.
+          </p>
+
+          <div class="grid grid--3" id="features-grid"></div>
+
+          <div style="margin-top:22px">
+            <a class="btn" href="#planos" id="features-cta">Ver planos</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="section">
+        <div class="container">
+          <h2 class="section__title" id="plans-title">Planos simples, sem pegadinha</h2>
+          <p class="section__lead" id="plans-lead">
+            Comece no gratuito e evolua quando quiser. Ajuste textos e valores conforme a estratégia do produto.
+          </p>
+
+          <div class="grid grid--2 grid--narrow">
+            <article class="card">
+              <div class="plan-head">
+                <div>
+                  <div class="muted" id="plan-free-name" style="font-weight:900; letter-spacing:.08em; text-transform:uppercase; font-size:12px">Gratuito</div>
+                  <p class="price" id="plan-free-price">R$ 0 — para sempre</p>
+                </div>
+              </div>
+              <ul class="list" id="plan-free-features"></ul>
+              <div style="margin-top:14px">
+                <a class="btn" href="#download" id="plan-free-cta">Começar</a>
+              </div>
+            </article>
+
+            <article class="card card--premium">
+              <div class="plan-head">
+                <div>
+                  <div class="muted" id="plan-premium-name" style="font-weight:900; letter-spacing:.08em; text-transform:uppercase; font-size:12px">Premium</div>
+                  <p class="price" id="plan-premium-price">Assinatura</p>
+                </div>
+              </div>
+              <span class="badge badge--floating" id="plan-premium-badge">Mais popular</span>
+              <p class="plan-plus" id="plan-premium-plus">
+                Tudo do Grátis, mais:
+              </p>
+              <ul class="list" id="plan-premium-features"></ul>
+              <div style="margin-top:14px">
+                <a class="btn btn--primary" href="#download" id="plan-premium-cta">Assinar</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section section--contact">
+        <div class="container contact">
+          <div class="card contact__card">
+            <h2 class="contact__title" id="contact-title">Vamos conversar</h2>
+            <p class="contact__text" id="contact-description">
+              Tem uma pergunta, feedback ou só quer dizer oi? Adoraríamos ouvir você.
+            </p>
+            <div class="contact__actions">
+              <a class="btn btn--primary" href="#" data-download-link id="contact-cta">Baixar na App Store</a>
+              <a class="btn" data-contact-link href="mailto:businesstrioada@gmail.com">Contato</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer">
+        <div id="footer-rights">© 2026 StretCat. Todos os direitos reservados.</div>
+        <div class="footer__links">
+          <a data-contact-link href="mailto:businesstrioada@gmail.com" id="footer-contact">Contato</a>
+          <a href="https://doc-hosting.flycricket.io/stretcat-privacy-policy/586a3a81-e9e2-48e5-87ec-2f3c6e7beefe/privacy" id="footer-privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
