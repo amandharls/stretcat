@@ -78,6 +78,32 @@ export const translations = {
       rights: '© 2026 StretCat. All rights reserved.',
       contact: 'Contact',
       privacy: 'Privacy Policy',
+      terms: 'Terms of Use',
+    },
+    legal: {
+      updated: 'Last updated: April 2026',
+      items: [
+        {
+          title: 'Subscription',
+          body: 'StretCat offers an auto-renewing subscription. Payment is charged to your Apple ID account at confirmation of purchase. The subscription renews automatically unless cancelled at least 24 hours before the end of the current period.',
+        },
+        {
+          title: 'Cancellation',
+          body: 'You can cancel your subscription at any time in: Settings → Apple ID → Subscriptions.',
+        },
+        {
+          title: 'Screen Time',
+          body: 'The app uses the iOS Screen Time API to monitor apps selected by the user. No usage data is collected or sent to external servers.',
+        },
+        {
+          title: 'Privacy',
+          body: 'Your configuration data is stored locally on the device. We do not share data with third parties.',
+        },
+        {
+          title: 'Contact',
+          body: 'businesstrioada@gmail.com',
+        },
+      ],
     },
   },
 
@@ -160,6 +186,32 @@ export const translations = {
       rights: '© 2026 StretCat. Todos os direitos reservados.',
       contact: 'Contato',
       privacy: 'Política de Privacidade',
+      terms: 'Termos de Uso',
+    },
+    legal: {
+      updated: 'Última atualização: abril de 2026',
+      items: [
+        {
+          title: 'Assinatura',
+          body: 'O Stretcat oferece assinatura de renovação automática. O pagamento é cobrado na sua conta Apple ID na confirmação da compra. A assinatura renova automaticamente a menos que seja cancelada pelo menos 24 horas antes do fim do período atual.',
+        },
+        {
+          title: 'Cancelamento',
+          body: 'Você pode cancelar a assinatura a qualquer momento em: Ajustes → Apple ID → Assinaturas.',
+        },
+        {
+          title: 'Screen Time',
+          body: 'O app utiliza a Screen Time API do iOS para monitorar apps selecionados pelo usuário. Nenhum dado de uso é coletado ou enviado para servidores externos.',
+        },
+        {
+          title: 'Privacidade',
+          body: 'Seus dados de configuração são armazenados localmente no dispositivo. Não compartilhamos dados com terceiros.',
+        },
+        {
+          title: 'Contato',
+          body: 'businesstrioada@gmail.com',
+        },
+      ],
     },
   },
 };

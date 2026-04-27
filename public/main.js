@@ -5,6 +5,8 @@ const CONTACT_EMAIL = 'businesstrioada@gmail.com';
 const DOWNLOAD_URL = '#';
 const PRIVACY_URL =
   'https://doc-hosting.flycricket.io/stretcat-privacy-policy/586a3a81-e9e2-48e5-87ec-2f3c6e7beefe/privacy';
+const TERMS_URL =
+  'https://doc-hosting.flycricket.io/stretcat-terms-of-use/e716a331-82c2-4871-82e6-1687f7138f43/terms';
 
 const DEFAULT_LANG = 'pt';
 
@@ -49,6 +51,19 @@ function renderFeatures(items) {
 
 function renderPlanFeatures(features) {
   return features.map((f) => `<li>${escapeHtml(f)}</li>`).join('');
+}
+
+function renderLegalItems(items) {
+  return items
+    .map(
+      (it) => `
+      <div class="legal__item">
+        <h3 class="legal__item-title">${escapeHtml(it.title)}</h3>
+        <p class="legal__item-body">${escapeHtml(it.body)}</p>
+      </div>
+    `,
+    )
+    .join('');
 }
 
 function applyLang(lang) {
@@ -100,10 +115,15 @@ function applyLang(lang) {
   setText('contact-description', t.contact.description);
   setText('contact-cta', t.contact.ctaDownload);
 
+  // Legal
+  setText('legal-updated', t.legal.updated);
+  setHtml('legal-grid', renderLegalItems(t.legal.items));
+
   // Footer
   setText('footer-rights', t.footer.rights);
   setText('footer-contact', t.footer.contact);
   setText('footer-privacy', t.footer.privacy);
+  setText('footer-terms', t.footer.terms);
 
   // Fixed links
   const contactLinks = document.querySelectorAll('[data-contact-link]');
@@ -118,6 +138,9 @@ function applyLang(lang) {
 
   const privacyLink = document.getElementById('footer-privacy');
   if (privacyLink) privacyLink.setAttribute('href', PRIVACY_URL);
+
+  const termsLink = document.getElementById('footer-terms');
+  if (termsLink) termsLink.setAttribute('href', TERMS_URL);
 }
 
 function initSmoothScroll() {
