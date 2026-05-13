@@ -1,8 +1,8 @@
 import { translations } from './i18n.js';
 
 const CONTACT_EMAIL = 'businesstrioada@gmail.com';
-// TODO: substitua pelo link real da App Store / Play Store
-const DOWNLOAD_URL = '#';
+const DOWNLOAD_URL =
+  'https://apps.apple.com/br/app/stretcat-alongamento-e-pausas/id6760904248';
 const PRIVACY_URL =
   'https://doc-hosting.flycricket.io/stretcat-privacy-policy/586a3a81-e9e2-48e5-87ec-2f3c6e7beefe/privacy';
 const TERMS_URL =
